@@ -1,9 +1,14 @@
-@charset "UTF-8";
-.card {
+.card__pc {
+  width: 244px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card__mobile {
   width: 200px;
   border-radius: 8px;
   overflow: hidden;
-  /* TODO: 以下の1行の削除 (作業用に背景色を追加しているため) */
-  background-color: aquamarine;
+  background-color: white;
 }
 /*# sourceMappingURL=Card.css.map */

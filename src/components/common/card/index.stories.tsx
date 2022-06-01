@@ -4,6 +4,11 @@ import Card from './index';
 export default {
   component: Card,
   title: 'common/Card',
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+    },
+  },
 } as Meta;
 
 const Template: Story = ({ imageUrl, cardName }) => (
