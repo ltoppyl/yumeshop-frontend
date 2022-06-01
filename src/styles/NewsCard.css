@@ -8,25 +8,15 @@
   border: solid 1px black;
 }
 
-.dateAndLabel {
+.dateAndTag {
   display: flex;
   padding: 9px 0px;
 }
 
-.dateAndLabel p {
+.dateAndTag p {
   margin-right: 10px;
 }
 
 .date {
   font-weight: bold;
-}
-
-.labelImportant {
-  color: white;
-  background-color: red;
-}
-
-.labelNewItem {
-  color: white;
-  background-color: orange;
 }
