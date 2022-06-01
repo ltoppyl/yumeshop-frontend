@@ -1,4 +1,4 @@
-.newsCard {
+.news-card {
   width: 100%;
   padding: 8px 8px;
   align-items: center;
@@ -8,15 +8,30 @@
   border: solid 1px white;
 }
 
-.dateAndTag {
+.news-card__data-and-tag {
   display: flex;
   padding: 9px 0px;
 }
 
-.dateAndTag p {
+.news-card__data-and-tag__date {
+  font: bold;
   margin-right: 10px;
 }
 
-.date {
-  font-weight: bold;
+.news-card__data-and-tag__tag__red {
+  color: white;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.news-card__data-and-tag__tag__yellow {
+  color: white;
+  background-color: yellow;
+  margin-right: 10px;
+}
+
+.news-card__data-and-tag__tag__orange {
+  color: white;
+  background-color: orange;
+  margin-right: 10px;
 }

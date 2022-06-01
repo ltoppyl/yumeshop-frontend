@@ -3,7 +3,7 @@ import 'src/styles/NewsCard.css';
 
 type tagProps = {
   id: string;
-  color: string;
+  color: 'red' | 'yellow' | 'orange';
   name: string;
 };
 
@@ -15,20 +15,27 @@ type Props = {
 };
 
 const NewsCard = ({ date, tagList, newsTitle, mainText }: Props) => (
-  <div className="newsCard">
-    <div className="dateAndTag">
-      <p className="date">{date.slice(0, 10)}</p>
+  <div className="news-card">
+    <div className="news-card__data-and-tag">
+      <p className="news-card__data-and-tag__date">{date.slice(0, 10)}</p>
       {tagList.map((tag) => (
-        <p
-          key={tag.id}
-          // TODO: NewsCard.css に書き出したい (変数の扱いが分からなかった)
-          style={{
-            color: 'white',
-            background: tag.color,
-          }}
-        >
-          {tag.name}
-        </p>
+        <>
+          {tag.color === 'red' && (
+            <p key={tag.id} className="news-card__data-and-tag__tag__red ">
+              {tag.name}
+            </p>
+          )}
+          {tag.color === 'yellow' && (
+            <p key={tag.id} className="news-card__data-and-tag__tag__yellow ">
+              {tag.name}
+            </p>
+          )}
+          {tag.color === 'orange' && (
+            <p key={tag.id} className="news-card__data-and-tag__tag__orange ">
+              {tag.name}
+            </p>
+          )}
+        </>
       ))}
     </div>
     <p>{newsTitle}</p>
