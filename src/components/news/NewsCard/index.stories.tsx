@@ -4,6 +4,11 @@ import NewsCard from './index';
 export default {
   component: NewsCard,
   title: 'news/NewsCard',
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+    },
+  },
 } as Meta;
 
 const Template: Story = ({ date, tagList, newsTitle, mainText }) => (
