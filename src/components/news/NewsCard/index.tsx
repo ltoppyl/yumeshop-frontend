@@ -1,9 +1,15 @@
 import React from 'react';
 import 'src/styles/NewsCard.css';
 
+type tagProps = {
+  id: string;
+  color: string;
+  name: string;
+};
+
 type Props = {
   date: string;
-  tagList: string[];
+  tagList: tagProps[];
   newsTitle: string;
   mainText: string;
 };
@@ -13,7 +19,6 @@ const NewsCard = ({ date, tagList, newsTitle, mainText }: Props) => (
     <div className="dateAndTag">
       <p className="date">{date.slice(0, 10)}</p>
       {tagList.map((tag) => (
-        // XXX: tag.### に対して警告が出ている (Property '###' does not exist on type 'string'.)
         <p
           key={tag.id}
           // TODO: NewsCard.css に書き出したい (変数の扱いが分からなかった)
