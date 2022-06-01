@@ -1,13 +1,32 @@
-.wrapper {
+.newsCard {
   width: 100%;
-  padding: 8px 0;
+  padding: 8px 8px;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 4px;
   /* TODO: 作業用に黒の囲いを配置　後に削除 */
   border: solid 1px black;
 }
 
-.boxContainer {
+.dateAndLabel {
   display: flex;
+  padding: 9px 0px;
+}
+
+.dateAndLabel p {
+  margin-right: 10px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.labelImportant {
+  color: white;
+  background-color: red;
+}
+
+.labelNewItem {
+  color: white;
+  background-color: orange;
 }
