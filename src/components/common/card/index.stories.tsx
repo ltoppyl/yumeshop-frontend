@@ -6,6 +6,12 @@ export default {
   title: 'common/Card',
 } as Meta;
 
-const Template: Story = () => <Card />;
+const Template: Story = ({ imageUrl, cardName }) => (
+  <Card imageUrl={imageUrl} cardName={cardName} />
+);
 
 export const card = Template.bind({});
+card.args = {
+  imageUrl: 'https://picsum.photos/300/200',
+  cardName: '文房具セール',
+};

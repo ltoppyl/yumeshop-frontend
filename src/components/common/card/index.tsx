@@ -3,15 +3,14 @@ import Image from 'next/image';
 
 import 'src/styles/Card.css';
 
-const Card = () => (
+type Props = {
+  imageUrl: string;
+  cardName: string;
+};
+const Card = ({ imageUrl, cardName }: Props) => (
   <div className="card">
-    <Image
-      width={200}
-      height={200}
-      src="https://picsum.photos/300/200"
-      alt="Image"
-    />
-    <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    <Image width={200} height={200} src={imageUrl} alt="Image" />
+    <p>{cardName}</p>
   </div>
 );
 
