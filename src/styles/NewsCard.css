@@ -16,25 +16,25 @@
 
 .news-card__data-and-tag__date {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .news-card__data-and-tag__tag__red {
   color: white;
   background-color: red;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .news-card__data-and-tag__tag__yellow {
   color: white;
   background-color: yellow;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .news-card__data-and-tag__tag__orange {
   color: white;
   background-color: orange;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .news-card__main-text {
