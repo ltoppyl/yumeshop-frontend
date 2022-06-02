@@ -43,7 +43,7 @@ const NewsCard = ({ date, tagList, newsTitle, mainText }: Props) => (
       ))}
     </div>
     <p>{newsTitle}</p>
-    <p>{mainText}</p>
+    <p className="news-card__data-and-tag__tag__main-text">{mainText}</p>
   </div>
 );
 
