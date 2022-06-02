@@ -11,15 +11,13 @@ type Props = {
 
 const Card = ({ imageUrl, cardName }: Props) => {
   const isWide = useMediaLayout({ minWidth: '1000px' });
+  const width = isWide ? 244 : 200;
+  const height = isWide ? 244 : 200;
+  const classDevice = isWide ? 'pc' : 'sp';
 
-  return isWide === true ? (
-    <div className="card__pc">
-      <Image width={244} height={244} src={imageUrl} alt="Image" />
-      <p>{cardName}</p>
-    </div>
-  ) : (
-    <div className="card__mobile">
-      <Image width={200} height={200} src={imageUrl} alt="Image" />
+  return (
+    <div className={`card ${classDevice}`}>
+      <Image width={width} height={height} src={imageUrl} alt="Image" />
       <p>{cardName}</p>
     </div>
   );

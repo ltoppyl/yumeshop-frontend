@@ -1,23 +1,23 @@
-.card__pc {
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card.pc {
   width: 244px;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: white;
 }
 
-.card__mobile {
+.card.sp {
   width: 200px;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: white;
 }
 
-.card__pc p {
+.card.pc p {
   font-size: 18px;
   padding: 0px 8px;
 }
 
-.card__mobile p {
+.card.sp p {
   font-size: 12px;
   padding: 0px 8px;
 }
