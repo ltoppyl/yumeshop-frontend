@@ -11,8 +11,9 @@ export default {
   },
 } as Meta;
 
-const Template: Story = ({ date, tagList, newsTitle, mainText }) => (
+const Template: Story = ({ id, date, tagList, newsTitle, mainText }) => (
   <NewsCard
+    id={id}
     date={date}
     tagList={tagList}
     newsTitle={newsTitle}
@@ -22,6 +23,7 @@ const Template: Story = ({ date, tagList, newsTitle, mainText }) => (
 
 export const newsCard = Template.bind({});
 newsCard.args = {
+  id: '57c3ff77-d8bd-41bb-86e3-4526e1b2186c',
   date: '2017-07-21T17:32:28',
   tagList: [
     {

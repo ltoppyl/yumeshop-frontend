@@ -6,6 +6,7 @@ export type NewsCardTagType = {
 };
 
 export type NewsCardDataType = {
+  id: string;
   date: string;
   tagList: NewsCardTagType[];
   newsTitle: string;

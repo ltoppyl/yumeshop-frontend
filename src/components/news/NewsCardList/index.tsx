@@ -11,7 +11,7 @@ export type NewsCardListProps = {
 const NewCardList = ({ newsDataList }: NewsCardListProps) => (
   <div className="news-card-list">
     {newsDataList.map((newsData: NewsCardDataType) => (
-      <NewsCard {...newsData} />
+      <NewsCard key={newsData.id} {...newsData} />
     ))}
   </div>
 );
