@@ -14,7 +14,7 @@
 }
 
 .news-card__data-and-tag__date {
-  font: bold;
+  font-weight: bold;
   margin-right: 10px;
 }
 

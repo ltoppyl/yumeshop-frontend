@@ -22,7 +22,7 @@ const Template: Story = ({ date, tagList, newsTitle, mainText }) => (
 
 export const newsCard = Template.bind({});
 newsCard.args = {
-  date: '2017-07-21T17:32:28Z',
+  date: '2017-07-21T17:32:28',
   tagList: [
     {
       id: '57c3ff77-d8bd-41bb-86e3-4526e1b2186c',
