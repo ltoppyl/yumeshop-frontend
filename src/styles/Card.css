@@ -1,0 +1,23 @@
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card.common-card-pc {
+  width: 244px;
+}
+
+.card.common-card-sp {
+  width: 200px;
+}
+
+.card.common-card-pc p {
+  font-size: 18px;
+  padding: 0px 8px;
+}
+
+.card.common-card-sp p {
+  font-size: 12px;
+  padding: 0px 8px;
+}
