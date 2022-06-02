@@ -14,8 +14,10 @@
 
 .card__pc p {
   font-size: 18px;
+  padding: 0px 8px;
 }
 
 .card__mobile p {
   font-size: 12px;
+  padding: 0px 8px;
 }
