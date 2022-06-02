@@ -16,7 +16,7 @@ const Card = ({ imageUrl, cardName }: Props) => {
   const deviceType = isWide ? 'pc' : 'sp';
 
   return (
-    <div className={`card ${deviceType}`}>
+    <div className={`card common-card-${deviceType}`}>
       <Image width={width} height={height} src={imageUrl} alt="cardName" />
       <p>{cardName}</p>
     </div>

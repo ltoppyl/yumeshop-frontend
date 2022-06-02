@@ -4,20 +4,20 @@
   background-color: white;
 }
 
-.card.pc {
+.card.common-card-pc {
   width: 244px;
 }
 
-.card.sp {
+.card.common-card-sp {
   width: 200px;
 }
 
-.card.pc p {
+.card.common-card-pc p {
   font-size: 18px;
   padding: 0px 8px;
 }
 
-.card.sp p {
+.card.common-card-sp p {
   font-size: 12px;
   padding: 0px 8px;
 }
