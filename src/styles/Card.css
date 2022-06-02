@@ -11,4 +11,11 @@
   overflow: hidden;
   background-color: white;
 }
-/*# sourceMappingURL=Card.css.map */
+
+.card__pc p {
+  font-size: 18px;
+}
+
+.card__mobile p {
+  font-size: 12px;
+}
