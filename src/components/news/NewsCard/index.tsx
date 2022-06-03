@@ -3,13 +3,14 @@ import dayjs from 'dayjs';
 
 import { NewsCardDataType } from 'src/types/type';
 
-const NewsCard = ({ date, tagList, newsTitle, mainText }: NewsCardDataType) => (
+// ano
+const NewsCard = ({ announcedDate, tags, title, detail }: NewsCardDataType) => (
   <div className="news-card">
     <div className="news-card__data-and-tag">
       <p className="news-card__data-and-tag__date">
-        {dayjs(date).format('YYYY/MM/DD')}
+        {dayjs(announcedDate).format('YYYY/MM/DD')}
       </p>
-      {tagList.map((tag) => (
+      {tags.map((tag) => (
         <p
           key={tag.id}
           className={`news-card__data-and-tag__tag__${tag.color}`}
@@ -18,8 +19,8 @@ const NewsCard = ({ date, tagList, newsTitle, mainText }: NewsCardDataType) => (
         </p>
       ))}
     </div>
-    <p>{newsTitle}</p>
-    <p className="news-card__main-text">{mainText}</p>
+    <p>{title}</p>
+    <p className="news-card__main-text">{detail}</p>
   </div>
 );
 
