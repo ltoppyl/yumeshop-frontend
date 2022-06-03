@@ -15,8 +15,13 @@ const Template: Story = ({ imageUrl, cardName }) => (
   <Card imageUrl={imageUrl} cardName={cardName} />
 );
 
+export const dummyCommonCardList = {
+  image: 'https://picsum.photos/300/200',
+  cardName: '文房具セール',
+};
+
 export const card = Template.bind({});
 card.args = {
-  imageUrl: 'https://picsum.photos/300/200',
-  cardName: '文房具セール',
+  imageUrl: dummyCommonCardList.image,
+  cardName: dummyCommonCardList.cardName,
 };
