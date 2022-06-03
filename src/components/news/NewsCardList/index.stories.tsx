@@ -12,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const dummyCardList: NewsCardDataType[] = [
+export const dummyCardList: NewsCardDataType[] = [
   {
     id: '57c3ff77-d8bd-41bb-86e3-4526e1b2186c',
     date: '2017-07-21T17:32:28',
