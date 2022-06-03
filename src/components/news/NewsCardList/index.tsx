@@ -2,7 +2,6 @@ import React from 'react';
 
 import { NewsCardDataType } from 'src/types/type';
 import NewsCard from '../NewsCard';
-import 'src/styles/NewsCardList.css';
 
 export type NewsCardListProps = {
   newsDataList: NewsCardDataType[];

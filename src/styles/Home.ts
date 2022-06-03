@@ -2,16 +2,15 @@ import styled from 'styled-components';
 import { colors } from './Tokens';
 
 export const TokenTest = styled.div`
-  background: ${colors['YumeGreen']};
+  background: ${colors.YumeGreen};
 `;
 
 export const Container = styled.div`
-  padding: 0 2rem;
+  background-color: #f0fcec;
 `;
 
 export const Main = styled.main`
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;

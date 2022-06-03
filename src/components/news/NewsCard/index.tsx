@@ -1,7 +1,6 @@
 import React from 'react';
 import dayjs from 'dayjs';
 
-import 'src/styles/NewsCard.css';
 import { NewsCardDataType } from 'src/types/type';
 
 const NewsCard = ({ date, tagList, newsTitle, mainText }: NewsCardDataType) => (
