@@ -6,12 +6,11 @@ export const TokenTest = styled.div`
 `;
 
 export const Container = styled.div`
-  padding: 0 2rem;
+  background-color: #f0fcec;
 `;
 
 export const Main = styled.main`
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
