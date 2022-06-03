@@ -2,8 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { useMediaLayout } from 'use-media';
 
-import 'src/styles/Card.css';
-
 type Props = {
   imageUrl: string;
   cardName: string;
