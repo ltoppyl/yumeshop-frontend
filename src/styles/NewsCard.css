@@ -34,6 +34,11 @@
   background-color: orange;
 }
 
+.news-card__data-and-tag__tag__mediumpurple {
+  color: white;
+  background-color: mediumpurple;
+}
+
 .news-card__main-text {
   white-space: pre-wrap;
 }
